@@ -7,13 +7,13 @@
       max-width: 590px;
       margin: auto; /* Auto center horizontally */
       margin-top: 25px;
-      
+
       padding: 15px;
       border: solid darkorange 3px;
       border-radius: 15px; /* curved corners */
       background-color: darkgrey;
       /*margin: 25px 450px; /*top/bottom right/left*/
-      
+
       text-align: center;
       color: turquoise;
       text-shadow: 2px 2px 5px teal;
@@ -21,8 +21,8 @@
       font-variant: small-caps;
       font-size: 45px;
       overflow: auto;
-      
-      
+
+
     }
     body{
       background-color: gray;
@@ -38,19 +38,52 @@
       margin-left:auto;
       margin-right:auto;
     }
+    * {
+  box-sizing: border-box;
+}
+     /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: left;
+    width: 33%;
+    padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
   </style>
 </head>
 
 <body>
-  
+
 <h1 class="solid">
 
   Poppy! <br>Happy Father's Day!!!
 
 </h1>
   <br>
-  <img src="poppySusan.png" width="500" height="350">
+  <!-- <img src="poppySusan.png" width="500" height="350"> -->
+  <div class="row"> </div>
+  <div class="row">
+    <div class="column">
+        <img src="poppySusan300.png" >
+    </div>
+    <div class="column">
+        <img src="poppyLolo300.jpg">
+    </div>
+    <div class="column">
+        <img src="poppyHeath300.png" alt="Forest" style="width=100%">
+    </div>
+
+
+  </div>
+
+
   <div class="desc"> We Love You!</div>
+
 
 
 </body>
